@@ -19,6 +19,21 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
   <style>
+    /* ── Sticky left column for Organisasi & Resume ── */
+    #organisasi .col-lg-4,
+    #resume .col-lg-4 {
+      align-self: flex-start !important;
+    }
+    #organisasi .col-lg-4 .resume-side,
+    #resume .col-lg-4 .resume-side {
+      position: sticky !important;
+      top: 20px !important;
+    }
+    /* Ensure parent row allows sticky to work */
+    #organisasi .row,
+    #resume .row {
+      align-items: flex-start !important;
+    }
     /* ── Contact info fixes ── */
     .contact .info-item .content p {
       word-break: break-all !important;
@@ -74,7 +89,7 @@
           <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
           <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
           <li><a href="#organisasi"><i class="bi bi-people navicon"></i> Organisasi</a></li>
-          <li><a href="#Keahlian"><i class="bi bi-hdd-stack navicon"></i> Keahlian</a></li>
+          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
           <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
           <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
         </ul>
@@ -168,7 +183,7 @@
               </div>
               <div class="description">
                 <p>Sarjana Teknik Elektro Universitas Jember (IPK 3,49/4,00) dengan pengalaman praktis di industri perkeretaapian nasional melalui program kerja praktik di PT. Industri Kereta Api (INKA) Persero.</p>
-                <p>Memiliki Keahlian teknis di bidang desain instalasi listrik, sistem kendali otomatis, wiring diagram, desain CAD, serta penerapan algoritma Reinforcement Learning pada sistem kontrol fisik berbasis Raspberry Pi.</p>
+                <p>Memiliki keahlian teknis di bidang desain instalasi listrik, sistem kendali otomatis, wiring diagram, desain CAD, serta penerapan algoritma Reinforcement Learning pada sistem kontrol fisik berbasis Raspberry Pi.</p>
               </div>
               <div class="stats-grid">
                 <div class="stat-item">
@@ -177,7 +192,7 @@
                 </div>
                 <div class="stat-item">
                   <div class="stat-number">4+</div>
-                  <div class="stat-label">Masa Perkuliahan</div>
+                  <div class="stat-label">Tahun Aktif Organisasi</div>
                 </div>
                 <div class="stat-item">
                   <div class="stat-number">1</div>
@@ -241,7 +256,7 @@
               <div class="stats-item" data-aos="zoom-in" data-aos-delay="250">
                 <div class="icon-wrapper"><i class="bi bi-people"></i></div>
                 <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Pengalaman Organisasi</p>
+                <p>Peran Organisasi</p>
               </div>
               <div class="stats-item" data-aos="zoom-in" data-aos-delay="300">
                 <div class="icon-wrapper"><i class="bi bi-tools"></i></div>
@@ -430,7 +445,7 @@
                 <p class="company"><i class="bi bi-building"></i> Universitas Jember</p>
                 <p>IPK: 3,49 / 4,00</p>
                 <ul>
-                  <li>Pembuatan PJU (Penerangan Jalan Utama) Menggunakan Panel Surya – Desa Curah Manis (2023) dan Jenggawa (2024), Jember </li>
+                  <li>Pembuatan PJU (Penerangan Jalan Utama) Menggunakan Panel Surya – Desa Curah Manis, Jember (2023 & 2024)</li>
                   <li>Tugas Akhir: Rancang Bangun Autofokus pada Mikroskop menggunakan Reinforcement Learning dengan algoritma PPO (Proximal Policy Optimization) – Apr–Agu 2025</li>
                 </ul>
               </div>
@@ -477,11 +492,11 @@
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 align-items-start">
+        <div class="row gy-4 align-items-start" style="align-items:flex-start!important;">
 
           <!-- Left column – auto height -->
-          <div class="col-lg-4 align-self-start">
-            <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
+          <div class="col-lg-4">
+            <div class="resume-side" data-aos="fade-right" data-aos-delay="100" style="position:sticky; top:20px;">
 
               <h3>Ringkasan</h3>
               <p>Aktif di <strong>17 kegiatan</strong> organisasi dan kepanitiaan selama 2022–2024, mulai dari staff magang hingga ketua pelaksana, mencakup kemahasiswaan teknis, pengembangan SDM, dan pengabdian masyarakat.</p>
@@ -733,12 +748,12 @@
 
     </section><!-- /Organisasi Section -->
 
-    <!-- keahlian Section -->
-    <section id="Keahlian" class="Keahlian section">
+    <!-- Services Section -->
+    <section id="services" class="services section">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Keahlian</h2>
-        <p>keahlian yang dapat saya tawarkan</p>
+        <h2>Services</h2>
+        <p>Layanan dan keahlian yang dapat saya tawarkan</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -806,7 +821,7 @@
         </div>
       </div>
 
-    </section><!-- /keahlian Section -->
+    </section><!-- /Services Section -->
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
