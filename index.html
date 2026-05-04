@@ -80,9 +80,8 @@
         </ul>
       </nav>
       <div class="social-links text-center">
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/taufiqharmansyah?igsh=bnZocHhoNTdrdDFi" class="instagram" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/mtaufiqh14/" class="linkedin" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
       </div>
     </div>
   </header>
@@ -109,8 +108,8 @@
                   <a href="#contact" class="btn btn-outline">Get In Touch</a>
                 </div>
                 <div class="social-links">
-                  <a href="#"><i class="bi bi-github"></i></a>
-                  <a href="https://www.linkedin.com/in/mtaufiqh14/"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.instagram.com/taufiqharmansyah?igsh=bnZocHhoNTdrdDFi" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/mtaufiqh14/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -1023,12 +1022,9 @@
             <div class="contact-form">
               <h3>Get In Touch</h3>
               <p>Kirimkan pesan Anda dan saya akan segera merespons.</p>
-              <form action="forms/contact.php" method="post" class="php-email-form">
+              <form id="contactForm">
                 <div class="row gy-4">
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                  </div>
-                  <div class="col-md-6">
+                  <div class="col-12">
                     <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
                   </div>
                   <div class="col-12">
@@ -1038,9 +1034,12 @@
                     <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                   </div>
                   <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    <div id="form-success" style="display:none;background:#059652;color:#fff;padding:12px 20px;border-radius:8px;margin-bottom:16px;font-weight:600;">
+                      Pesan berhasil terkirim. Terima kasih!
+                    </div>
+                    <div id="form-error" style="display:none;background:#df1529;color:#fff;padding:12px 20px;border-radius:8px;margin-bottom:16px;font-weight:600;">
+                      Gagal mengirim pesan. Silakan coba lagi.
+                    </div>
                     <button type="submit" class="btn">Send Message</button>
                   </div>
                 </div>
@@ -1109,6 +1108,54 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    // ── EmailJS Configuration ──
+    // Ganti 3 nilai berikut setelah daftar di emailjs.com:
+    const EMAILJS_PUBLIC_KEY  = 'M0rmraKbIUFGUewaH';   // Account > API Keys
+    const EMAILJS_SERVICE_ID  = 'service_tkpjq7d';   // Email Services
+    const EMAILJS_TEMPLATE_ID = 'template_4kht1mn';  // Email Templates
+
+    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn     = contactForm.querySelector('button[type="submit"]');
+        const successEl = document.getElementById('form-success');
+        const errorEl   = document.getElementById('form-error');
+
+        btn.textContent = 'Mengirim...';
+        btn.disabled    = true;
+        successEl.style.display = 'none';
+        errorEl.style.display   = 'none';
+
+        // Collect form values
+        const templateParams = {
+          from_email : contactForm.querySelector('[name="email"]').value,
+          subject    : contactForm.querySelector('[name="subject"]').value,
+          message    : contactForm.querySelector('[name="message"]').value,
+          to_email   : 'taufiqharmansyah014@gmail.com'
+        };
+
+        emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+          .then(function() {
+            successEl.style.display = 'block';
+            contactForm.reset();
+          })
+          .catch(function(err) {
+            console.error('EmailJS error:', err);
+            errorEl.style.display = 'block';
+          })
+          .finally(function() {
+            btn.textContent = 'Send Message';
+            btn.disabled    = false;
+          });
+      });
+    }
+  </script>
 
 </body>
 </html>
