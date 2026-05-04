@@ -41,6 +41,20 @@
     #resume .resume-side {
       position: relative;
     }
+    /* ── Resume contact-info list fix ── */
+    .resume .resume-side .contact-info li {
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 8px !important;
+      margin-bottom: 0.75rem !important;
+      word-break: break-all !important;
+    }
+    .resume .resume-side .contact-info li i {
+      flex-shrink: 0 !important;
+      margin-top: 3px !important;
+      color: var(--accent-color) !important;
+      width: 16px !important;
+    }
     /* ── Contact info fixes ── */
     .contact .info-item .content p {
       word-break: break-all !important;
