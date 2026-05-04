@@ -35,6 +35,36 @@
     #resume .row {
       align-items: flex-start !important;
     }
+    /* Make left col narrower, right col wider */
+    #organisasi .col-lg-4 {
+      flex: 0 0 auto;
+      width: 28% !important;
+    }
+    #organisasi .col-lg-8 {
+      flex: 0 0 auto;
+      width: 72% !important;
+    }
+    #resume .col-lg-4 {
+      flex: 0 0 auto;
+      width: 28% !important;
+    }
+    #resume .col-lg-8 {
+      flex: 0 0 auto;
+      width: 72% !important;
+    }
+    @media (max-width: 991px) {
+      #organisasi .col-lg-4,
+      #organisasi .col-lg-8,
+      #resume .col-lg-4,
+      #resume .col-lg-8 {
+        width: 100% !important;
+      }
+    }
+    /* Fade bottom of left col when shorter than right */
+    #organisasi .resume-side,
+    #resume .resume-side {
+      position: relative;
+    }
     /* ── Contact info fixes ── */
     .contact .info-item .content p {
       word-break: break-all !important;
