@@ -19,20 +19,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
   <style>
-    /* ── Sticky left + scrollable right for Organisasi ── */
-    #org-right-col::-webkit-scrollbar {
-      width: 4px;
-    }
-    #org-right-col::-webkit-scrollbar-track {
-      background: transparent;
-    }
-    #org-right-col::-webkit-scrollbar-thumb {
-      background: rgba(255,255,255,0.15);
-      border-radius: 4px;
-    }
-    #org-right-col::-webkit-scrollbar-thumb:hover {
-      background: rgba(255,255,255,0.3);
-    }
+
     /* ── Sticky left column for Organisasi & Resume ── */
     #organisasi .col-lg-4,
     #resume .col-lg-4 {
@@ -584,8 +571,8 @@
             </div>
           </div>
 
-          <!-- Right column – scrollable -->
-          <div class="col-lg-8 ps-4 ps-lg-5" id="org-right-col" style="max-height:85vh; overflow-y:auto; overflow-x:hidden; scrollbar-width:thin; scrollbar-color:rgba(255,255,255,0.15) transparent; padding-right:10px;">
+          <!-- Right column -->
+          <div class="col-lg-8 ps-4 ps-lg-5" id="org-right-col">
 
             <!-- KATEGORI 1: Ketua & Koordinator -->
             <div class="resume-section" id="org-ketua" data-aos="fade-up">
@@ -1137,22 +1124,7 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>
-    // Scroll chaining: right col scrolls first, page scrolls when at limits
-    window.addEventListener('load', function() {
-      const rightCol = document.getElementById('org-right-col');
-      if (!rightCol) return;
-      rightCol.addEventListener('wheel', function(e) {
-        const atTop    = rightCol.scrollTop <= 0;
-        const atBottom = rightCol.scrollTop + rightCol.clientHeight >= rightCol.scrollHeight - 2;
-        if ((atTop && e.deltaY < 0) || (atBottom && e.deltaY > 0)) {
-          return; // boundary reached, let page scroll
-        }
-        e.preventDefault();
-        rightCol.scrollTop += e.deltaY;
-      }, { passive: false });
-    });
-  </script>
+
   <!-- EmailJS SDK -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
