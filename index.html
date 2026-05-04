@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - SnapFolio Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    /* ── Contact info fixes ── */
+    .contact .info-item .content p {
+      word-break: break-all !important;
+      overflow-wrap: break-word !important;
+      white-space: normal !important;
+    }
+    .contact .info-item {
+      overflow: hidden !important;
+    }
+    /* ── About profile card fixes ── */
+    /* Make profile image circle bigger and not crop */
+    .about .profile-image {
+      width: 140px !important;
+      height: 140px !important;
+      min-width: 140px !important;
+      border-radius: 50% !important;
+      overflow: hidden !important;
+      margin: 0 auto !important;
+    }
+    .about .profile-image img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      object-position: center top !important;
+    }
+    /* Profile card does not overflow */
+    .about .profile-card {
+      overflow: hidden !important;
+      word-break: break-word !important;
+    }
+    /* Contact item text wraps properly */
+    .about .contact-item {
+      word-break: break-all !important;
+      white-space: normal !important;
+      font-size: 0.85rem !important;
+    }
+    /* About content col doesn't overflow */
+    .about .about-content {
+      overflow: hidden !important;
+      word-break: break-word !important;
+    }
+    /* ── Hero profile photo - tampilkan full, zoom out ── */
+    .hero .profile-container {
+      overflow: visible !important;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .hero .profile-image {
+      width: auto !important;
+      height: auto !important;
+      max-width: 100% !important;
+      max-height: 520px !important;
+      object-fit: contain !important;
+      transform: scale(0.82) translateY(5%) !important;
+      transform-origin: bottom center !important;
+      border-radius: 12px !important;
+    }
+    .hero .profile-background {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#organisasi"><i class="bi bi-people navicon"></i> Organisasi</a></li>
+          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social-links text-center">
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="background-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+      </div>
+      <div class="hero-content">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="hero-text">
+                <h1>Snap<span class="accent-text">Folio</span></h1>
+                <h2>Mochammad Taufiq Harmansyah</h2>
+                <p class="lead">Saya <span class="typed" data-typed-items="Lulusan baru, Teknik Elektro"></span></p>
+                <p class="description">Passionate about creating exceptional digital experiences that blend innovative design with functional development. Let's bring your vision to life.</p>
+                <div class="hero-actions">
+                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                  <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                  <a href="#"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/mtaufiqh14/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="hero-visual">
+                <div class="profile-container">
+                  <div class="profile-background"></div>
+                  <img src="assets/img/profile/profile-2.webp" alt="Mochammad Taufiq Harmansyah" class="profile-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-image">
+                  <img src="assets/img/profile/profile-square-3.webp" alt="Profile Image" class="img-fluid">
+                </div>
+                <div class="profile-badge">
+                  <i class="bi bi-check-circle-fill"></i>
+                </div>
+              </div>
+              <div class="profile-content">
+                <h3>Mochammad Taufiq Harmansyah</h3>
+                <p class="profession">Sarjana Teknik Elektro</p>
+                <div class="contact-links">
+                  <a href="mailto:taufiqharmansyah014@gmail.com" class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    taufiqharmansyah014@gmail.com
+                  </a>
+                  <a href="tel:+6287725160973" class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    +6287725160973
+                  </a>
+                  <a href="#" class="contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    Kota Madiun, Jawa Timur, Indonesia
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="section-header">
+                <span class="badge-text">Get to Know Me</span>
+                <h2>Passionate About Electrical Engineering & Control Systems</h2>
+              </div>
+              <div class="description">
+                <p>Sarjana Teknik Elektro Universitas Jember (IPK 3,49/4,00) dengan pengalaman praktis di industri perkeretaapian nasional melalui program kerja praktik di PT. Industri Kereta Api (INKA) Persero.</p>
+                <p>Memiliki keahlian teknis di bidang desain instalasi listrik, sistem kendali otomatis, wiring diagram, desain CAD, serta penerapan algoritma Reinforcement Learning pada sistem kontrol fisik berbasis Raspberry Pi.</p>
+              </div>
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <div class="stat-number">3.49</div>
+                  <div class="stat-label">IPK / 4.00</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">4+</div>
+                  <div class="stat-label">Masa Perkuliahan</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">1</div>
+                  <div class="stat-label">Pengalaman Industri</div>
+                </div>
+              </div>
+              <div class="details-grid">
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Spesialisasi</span>
+                    <span class="detail-value">Teknik Elektro & Sistem Kendali</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Level</span>
+                    <span class="detail-value">Fresh Graduate</span>
+                  </div>
+                </div>
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Pendidikan</span>
+                    <span class="detail-value">Teknik Elektro, Universitas Jember</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Bahasa</span>
+                    <span class="detail-value">Indonesia, English</span>
+                  </div>
+                </div>
+              </div>
+              <div class="cta-section">
+                <a href="#resume" class="btn btn-primary">
+                  <i class="bi bi-file-earmark-text"></i>
+                  Lihat Resume
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                  <i class="bi bi-chat-dots"></i>
+                  Let's Talk
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="stats-wrapper">
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="150">
+                <div class="icon-wrapper"><i class="bi bi-mortarboard"></i></div>
+                <span id="ipk-counter">0.00</span>
+                <p>IPK / 4.00</p>
+              </div>
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-wrapper"><i class="bi bi-journal-richtext"></i></div>
+                <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Tahun Studi</p>
+              </div>
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="250">
+                <div class="icon-wrapper"><i class="bi bi-people"></i></div>
+                <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Peran Organisasi</p>
+              </div>
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-wrapper"><i class="bi bi-tools"></i></div>
+                <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Software Dikuasai</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Keahlian teknis dan non-teknis yang diasah melalui pendidikan, kerja praktik, dan pengalaman organisasi</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+              <h3>Hard Skills</h3>
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Desain Skematik & Wiring</h4>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Wiring diagram, ladder diagram, schematic design untuk sistem kelistrikan</div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Sistem Kendali Otomatis</h4>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Penguasaan CX-One, Reinforcement Learning untuk sistem kontrol fisik (Raspberry Pi)</div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Pemrograman Mikrokontroler</h4>
+                    <span class="skill-percentage">75%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Arduino UNO, Raspberry Pi, embedded programming</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+              <h3>Tools & Software</h3>
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>AutoCAD / SolidWorks</h4>
+                    <span class="skill-percentage">70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Desain CAD untuk instalasi dan komponen mekanikal-elektrikal</div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>MATLAB & Proteus</h4>
+                    <span class="skill-percentage">65%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Simulasi rangkaian dan analisis sistem kontrol</div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>EasyEDA</h4>
+                    <span class="skill-percentage">75%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Desain PCB dan schematic elektronika</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Sarjana Teknik Elektro Universitas Jember dengan pengalaman praktis di industri perkeretaapian nasional. Berorientasi pada hasil dan berkomitmen untuk terus berkembang di bidang rekayasa kelistrikan dan sistem kendali.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <!-- Left column -->
+          <div class="col-lg-4">
+            <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
+              <div class="profile-img mb-4">
+                <img src="assets/img/profile/profile-square-2.webp" alt="Profile" class="img-fluid rounded">
+              </div>
+              <h3>Ringkasan Profesional</h3>
+              <p>Sarjana Teknik Elektro (IPK 3,49/4,00) dengan keahlian di desain instalasi listrik, sistem kendali otomatis, wiring diagram, dan CAD. Berpengalaman di industri perkeretaapian nasional melalui kerja praktik di PT. INKA.</p>
+              <h3 class="mt-4">Informasi Kontak</h3>
+              <ul class="contact-info list-unstyled">
+                <li><i class="bi bi-geo-alt"></i> Kota Madiun, Jawa Timur, Indonesia</li>
+                <li><i class="bi bi-envelope"></i> taufiqharmansyah014@gmail.com</li>
+                <li><i class="bi bi-phone"></i> +6287725160973</li>
+                <li><i class="bi bi-linkedin"></i> linkedin.com/in/mtaufiqh14/</li>
+              </ul>
+              <div class="skills-animation mt-4">
+                <h3>Kemampuan Teknis</h3>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Desain Skematik & Wiring</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Sistem Kendali Otomatis</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Pemrograman Mikrokontroler</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>CAD (AutoCAD, SolidWorks)</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>MATLAB & Simulasi</span>
+                    <span>65%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4">
+                <h3>Software</h3>
+                <p>Microsoft Office, SolidWorks, AutoCAD, EasyEDA, CX-One, Arduino IDE, Proteus, MATLAB</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right column -->
+          <div class="col-lg-8 ps-4 ps-lg-5">
+
+            <!-- Education -->
+            <div class="resume-section" data-aos="fade-up">
+              <h3><i class="bi bi-mortarboard me-2"></i>Pendidikan</h3>
+              <div class="resume-item">
+                <h4>Sarjana Teknik Elektro</h4>
+                <h5>Agustus 2021 – November 2025</h5>
+                <p class="company"><i class="bi bi-building"></i> Universitas Jember</p>
+                <p>IPK: 3,49 / 4,00</p>
+                <ul>
+                  <li>Pembuatan PJU (Penerangan Jalan Utama) Menggunakan Panel Surya – Desa Curah Manis, Jember (2023 & 2024)</li>
+                  <li>Tugas Akhir: Rancang Bangun Autofokus pada Mikroskop menggunakan Reinforcement Learning dengan algoritma PPO (Proximal Policy Optimization) – Apr–Agu 2025</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
+              <h3><i class="bi bi-briefcase me-2"></i>Pengalaman Kerja</h3>
+              <div class="resume-item">
+                <h4>Teknisi Listrik Freelance</h4>
+                <h5>Januari 2026 – Sekarang</h5>
+                <ul>
+                  <li>Melakukan instalasi listrik dan pengkabelan pada bangunan residensial dan komersial skala kecil</li>
+                  <li>Melaksanakan pengecekan, troubleshooting, dan perbaikan sistem serta peralatan kelistrikan</li>
+                  <li>Memastikan seluruh pekerjaan sesuai standar keselamatan kelistrikan yang berlaku</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Student Intern – Electrical Design</h4>
+                <h5>Desember 2023 – Maret 2024</h5>
+                <p class="company"><i class="bi bi-building"></i> PT. Industri Kereta Api (INKA) Persero – Divisi Teknologi, Departemen Electrical Design</p>
+                <ul>
+                  <li>Merancang routing underframe kereta KCI gerbong TC1</li>
+                  <li>Menyusun wiring tabel kereta KCI gerbong TC1</li>
+                  <li>Membantu mengubah drawing panel distribusi menjadi gambar visual panel distribusi</li>
+                  <li>Mendata kabel kereta KCI</li>
+                  <li>Membantu mencocokkan drawing schematic dengan drawing panel</li>
+                </ul>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section><!-- /Resume Section -->
+
+        <!-- Organisasi Section -->
+    <section id="organisasi" class="resume section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Organisasi</h2>
+        <p>Rekam jejak aktif berorganisasi dan berkepanitiaan selama masa studi — mengasah kepemimpinan, koordinasi tim, dan manajemen acara dari tingkat staf hingga ketua pelaksana.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 align-items-start">
+
+          <!-- Left column – auto height -->
+          <div class="col-lg-4 align-self-start">
+            <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
+
+              <h3>Ringkasan</h3>
+              <p>Aktif di <strong>17 kegiatan</strong> organisasi dan kepanitiaan selama 2022–2024, mulai dari staff magang hingga ketua pelaksana, mencakup kemahasiswaan teknis, pengembangan SDM, dan pengabdian masyarakat.</p>
+
+              <div class="skills-animation mt-4">
+                <h3>Soft Skills Terasah</h3>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between"><span>Kepemimpinan & Koordinasi</span><span>85%</span></div>
+                  <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between"><span>Manajemen Acara & Timeline</span><span>80%</span></div>
+                  <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between"><span>Komunikasi & Negosiasi</span><span>80%</span></div>
+                  <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between"><span>Problem Solving</span><span>85%</span></div>
+                  <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between"><span>Teamwork & Adaptability</span><span>90%</span></div>
+                  <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <h3>Statistik</h3>
+                <div class="stats-grid mt-3">
+                  <div class="stat-item">
+                    <div class="stat-number">17</div>
+                    <div class="stat-label">Kegiatan Aktif</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Posisi Pimpinan</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Tahun Aktif</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <h3>Kategori</h3>
+                <ul class="list-unstyled" style="margin-top:10px;">
+                  <li style="padding:6px 0; border-bottom:1px solid rgba(255,255,255,0.08);">
+                    <a href="#org-ketua" style="color:inherit;text-decoration:none;display:flex;align-items:center;gap:8px;">
+                      <i class="bi bi-award" style="color:#a78bfa;"></i>
+                      <span>Ketua & Koordinator <span style="float:right;color:#a78bfa;font-weight:700;">4</span></span>
+                    </a>
+                  </li>
+                  <li style="padding:6px 0; border-bottom:1px solid rgba(255,255,255,0.08);">
+                    <a href="#org-staff" style="color:inherit;text-decoration:none;display:flex;align-items:center;gap:8px;">
+                      <i class="bi bi-people" style="color:#34d399;"></i>
+                      <span>Staff Anggota <span style="float:right;color:#34d399;font-weight:700;">11</span></span>
+                    </a>
+                  </li>
+                  <li style="padding:6px 0;">
+                    <a href="#org-magang" style="color:inherit;text-decoration:none;display:flex;align-items:center;gap:8px;">
+                      <i class="bi bi-person-badge" style="color:#38bdf8;"></i>
+                      <span>Staff Magang <span style="float:right;color:#38bdf8;font-weight:700;">2</span></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right column – grouped by category -->
+          <div class="col-lg-8 ps-4 ps-lg-5">
+
+            <!-- KATEGORI 1: Ketua & Koordinator -->
+            <div class="resume-section" id="org-ketua" data-aos="fade-up">
+              <h3><i class="bi bi-award me-2" style="color:#a78bfa;"></i>Ketua &amp; Koordinator</h3>
+
+              <div class="resume-item">
+                <h4>Ketua – Kuliah Kerja Nyata (KKN)</h4>
+                <h5>Agustus 2024 – September 2024</h5>
+                <p class="company"><i class="bi bi-building"></i> Universitas Jember</p>
+                <ul>
+                  <li>Memimpin seluruh kelompok KKN dan membangun hubungan strategis dengan mitra lokal</li>
+                  <li>Menyusun jadwal kerja terintegrasi bersama PIC untuk memastikan efisiensi waktu</li>
+                  <li>Memfasilitasi rapat mingguan dan sesi evaluasi untuk menjaga performa tim</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Ketua Pelaksana – Elektro Back to Service (EBS)</h4>
+                <h5>Mei 2023 – Juni 2023</h5>
+                <p class="company"><i class="bi bi-building"></i> Himpunan Mahasiswa Teknik Elektro, Universitas Jember</p>
+                <ul>
+                  <li>Menyusun struktur kepanitiaan, RAB, dan timeline dari persiapan hingga evaluasi</li>
+                  <li>Menyusun tugas pokok dan fungsi (tupoksi) setiap divisi dengan jelas</li>
+                  <li>Memantau progres kerja setiap divisi secara berkala dan menjalin komunikasi dengan pihak luar</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Koordinator Acara – LKMM Tingkat Dasar (LKMM-TD)</h4>
+                <h5>April 2023 – Mei 2023</h5>
+                <p class="company"><i class="bi bi-building"></i> Himpunan Mahasiswa Teknik Elektro, Universitas Jember</p>
+                <ul>
+                  <li>Menentukan tema dan konsep acara pelatihan manajemen mahasiswa</li>
+                  <li>Membagi job desc tiap staff dan menyelaraskan kerja antar divisi (acara, perlengkapan, pendataan)</li>
+                  <li>Mengawasi jalannya acara agar sesuai rundown yang telah dibuat</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Koordinator Pendataan – Jember Line Tracer (JLT) XIII</h4>
+                <h5>Juli 2023 – November 2023</h5>
+                <p class="company"><i class="bi bi-building"></i> Himpunan Mahasiswa Teknik Elektro, Universitas Jember</p>
+                <ul>
+                  <li>Menyusun jadwal rekrutmen terbuka dan wawancara untuk calon staf JLT XIII</li>
+                  <li>Bertanggung jawab atas pendaftaran, registrasi peserta, dan sistem penilaian kompetisi</li>
+                  <li>Berkoordinasi dengan divisi acara mengenai sistem penilaian tiap tim</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- KATEGORI 2: Staff Anggota -->
+            <div class="resume-section" id="org-staff" data-aos="fade-up" data-aos-delay="50">
+              <h3><i class="bi bi-people me-2" style="color:#34d399;"></i>Staff Anggota</h3>
+
+              <div class="resume-item">
+                <h4>Staff Anggota – Dept. Pengembangan Sumberdaya Mahasiswa</h4>
+                <h5>Januari 2024 – Desember 2024</h5>
+                <p class="company"><i class="bi bi-building"></i> Himpunan Mahasiswa Teknik Elektro, Universitas Jember</p>
+                <ul>
+                  <li>Membantu kepala departemen dalam menjalankan fungsi kerja departemen PSDM</li>
+                  <li>Penanggung jawab program kerja Elektro Back to Service 2024</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Staff Anggota – Divisi Acara, LKMM-TD</h4>
+                <h5>April 2024 – Mei 2024</h5>
+                <p class="company"><i class="bi bi-building"></i> Himpunan Mahasiswa Teknik Elektro, Universitas Jember</p>
+                <ul>
+                  <li>Mendukung pelaksanaan pelatihan keterampilan manajemen mahasiswa tingkat dasar</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Staff Anggota – Divisi Acara, Elektro Back to Service (EBS)</h4>
+                <h5>Mei 2024 – Juni 2024</h5>
+                <p class="company"><i class="bi bi-building"></i> Himpunan Mahasiswa Teknik Elektro, Universitas Jember</p>
+                <ul>
+                  <li>Membantu pelaksanaan teknis acara EBS 2024 dari sisi divisi acara</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Staff Anggota – Dept. Pengembangan Sumberdaya Mahasiswa</h4>
+                <h5>Januari 2023 – Desember 2023</h5>
+                <p class="company"><i class="bi bi-building"></i> Himpunan Mahasiswa Teknik Elektro, Universitas Jember</p>
+                <ul>
+                  <li>Penanggung jawab program kerja Elektro Back to Service 2023</li>
+                  <li>Penanggung jawab fungsi kerja pengembangan mahasiswa</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Staff Anggota – Divisi Pendamping, IDM 2023</h4>
+                <h5>Juli 2023 – November 2023</h5>
+                <p class="company"><i class="bi bi-building"></i> Himpunan Mahasiswa Teknik Elektro, Universitas Jember</p>
+                <ul>
+                  <li>Mendampingi mahasiswa baru dalam program orientasi dan pengenalan lingkungan teknik elektro</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Staff Anggota – Divisi Pendamping, PKKMB 2023</h4>
+                <h5>Juli 2023 – Agustus 2023</h5>
+                <p class="company"><i class="bi bi-building"></i> Universitas Jember</p>
+                <ul>
+                  <li>Mendampingi mahasiswa baru dalam rangkaian kegiatan Pengenalan Kehidupan Kampus (PKKMB)</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Staff Anggota – Divisi Acara, Career Class</h4>
+                <h5>Oktober 2023</h5>
+                <p class="company"><i class="bi bi-building"></i> Himpunan Mahasiswa Teknik Elektro, Universitas Jember</p>
+                <ul>
+                  <li>Membantu pelaksanaan teknis acara seminar karir untuk mahasiswa teknik elektro</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Staff Anggota – Divisi Pendataan, Jember Line Tracer (JLT) XII</h4>
+                <h5>Juli 2022 – November 2022</h5>
+                <p class="company"><i class="bi bi-building"></i> Himpunan Mahasiswa Teknik Elektro, Universitas Jember</p>
+                <ul>
+                  <li>Membantu pendataan peserta dan administrasi pelaksanaan kompetisi Line Tracer</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Staff Anggota – Divisi Kesehatan, IDM 2022</h4>
+                <h5>Juli 2022 – November 2022</h5>
+                <p class="company"><i class="bi bi-building"></i> Himpunan Mahasiswa Teknik Elektro, Universitas Jember</p>
+                <ul>
+                  <li>Bertanggung jawab atas kesiapan dan penanganan kesehatan peserta selama kegiatan IDM</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Staff Anggota – Divisi Pendataan, EEPIC</h4>
+                <h5>Januari 2022 – April 2022</h5>
+                <p class="company"><i class="bi bi-building"></i> Himpunan Mahasiswa Teknik Elektro, Universitas Jember</p>
+                <ul>
+                  <li>Mengelola pendataan dan administrasi peserta acara perayaan tahunan Electrical Engineering Party with Impressive Celebration</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- KATEGORI 3: Staff Magang -->
+            <div class="resume-section" id="org-magang" data-aos="fade-up" data-aos-delay="100">
+              <h3><i class="bi bi-person-badge me-2" style="color:#38bdf8;"></i>Staff Magang</h3>
+
+              <div class="resume-item">
+                <h4>Staff Magang – Dept. Pengembangan Sumberdaya Mahasiswa</h4>
+                <h5>September 2022 – Desember 2022</h5>
+                <p class="company"><i class="bi bi-building"></i> Himpunan Mahasiswa Teknik Elektro, Universitas Jember</p>
+                <ul>
+                  <li>Mengikuti program magang PSDM dan mempelajari sistem kerja pengembangan SDM mahasiswa di lingkungan kampus teknik</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Staff Magang – Dept. Pengembangan Sumberdaya Mahasiswa</h4>
+                <h5>Januari 2022 – Desember 2022</h5>
+                <p class="company"><i class="bi bi-building"></i> Power Community (PORCOM), Universitas Jember</p>
+                <ul>
+                  <li>Aktif dalam kegiatan pengembangan mahasiswa di komunitas Power Community (PORCOM)</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Organisasi Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Layanan dan keahlian yang dapat saya tawarkan</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-header">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-md-12">
+              <div class="service-intro">
+                <h2 class="service-heading">
+                  <div>Siap Berkontribusi di Bidang</div>
+                  <div><span>Teknik Elektro &amp; Sistem Kendali</span></div>
+                </h2>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="service-summary">
+                <p>Menawarkan kemampuan teknis di bidang desain kelistrikan, sistem kendali otomatis, dan pemrograman mikrokontroler — siap diterapkan dalam lingkungan industri maupun proyek nyata.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon"><i class="bi bi-lightning-charge"></i></div>
+              <h3>Instalasi <span>Listrik</span></h3>
+              <p>Instalasi listrik untuk bangunan residensial dan komersial sesuai standar keselamatan kelistrikan yang berlaku.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon"><i class="bi bi-diagram-3"></i></div>
+              <h3>Desain <span>Skematik</span></h3>
+              <p>Perancangan wiring diagram, ladder diagram, dan schematic elektrikal untuk sistem industri maupun komersial.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon"><i class="bi bi-cpu"></i></div>
+              <h3>Sistem <span>Kendali</span></h3>
+              <p>Perancangan dan implementasi sistem kendali otomatis berbasis PLC, mikrokontroler, dan algoritma cerdas.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon"><i class="bi bi-tools"></i></div>
+              <h3>Troubleshooting <span>&amp; Perbaikan</span></h3>
+              <p>Pengecekan, diagnosa, dan perbaikan sistem serta peralatan kelistrikan yang mengalami gangguan.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon"><i class="bi bi-sun"></i></div>
+              <h3>Panel <span>Surya</span></h3>
+              <p>Perencanaan dan pemasangan sistem PJU dan instalasi panel surya untuk kebutuhan energi terbarukan.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon"><i class="bi bi-file-earmark-text"></i></div>
+              <h3>Konsultasi <span>Teknik</span></h3>
+              <p>Konsultasi teknik elektro untuk perencanaan proyek, analisis sistem, dan pengembangan desain instalasi listrik.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Proyek-proyek teknik yang telah saya kerjakan selama masa studi, mulai dari instalasi energi terbarukan, sistem kendali PLC, hingga penerapan Reinforcement Learning pada hardware fisik.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <div class="row">
+            <div class="col-lg-3 filter-sidebar">
+              <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
+                <ul class="portfolio-filters isotope-filters">
+                  <li data-filter="*" class="filter-active">Semua Proyek</li>
+                  <li data-filter=".filter-energi">Energi Terbarukan</li>
+                  <li data-filter=".filter-ai">AI & Robotika</li>
+                  <li data-filter=".filter-plc">Otomasi PLC</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <style>
+                /* Portfolio card text clarity override */
+                .portfolio-wrap { position: relative; overflow: hidden; border-radius: 8px; }
+                .portfolio-wrap img { width: 100%; height: 280px; object-fit: cover; display: block; transition: transform 0.4s ease; }
+                .portfolio-wrap:hover img { transform: scale(1.05); }
+                .portfolio-overlay {
+                  position: absolute; inset: 0;
+                  background: linear-gradient(to top, rgba(0,0,0,0.92) 45%, rgba(0,0,0,0.25) 100%);
+                  display: flex; flex-direction: column; justify-content: flex-end;
+                  padding: 18px 16px 16px;
+                  transition: background 0.3s;
+                }
+                .portfolio-wrap:hover .portfolio-overlay {
+                  background: linear-gradient(to top, rgba(0,0,0,0.97) 55%, rgba(0,0,0,0.45) 100%);
+                }
+                .portfolio-cat {
+                  font-size: 0.65rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+                  color: #a78bfa; margin-bottom: 5px;
+                }
+                .portfolio-cat.energi { color: #34d399; }
+                .portfolio-cat.ai { color: #38bdf8; }
+                .portfolio-cat.plc { color: #f59e0b; }
+                .portfolio-title {
+                  font-size: 1rem; font-weight: 700; color: #ffffff; margin: 0 0 4px;
+                  text-shadow: 0 1px 4px rgba(0,0,0,0.8); line-height: 1.3;
+                }
+                .portfolio-date {
+                  font-size: 0.72rem; color: #d1d5db; margin: 0 0 8px;
+                }
+                .portfolio-desc {
+                  font-size: 0.72rem; color: #cbd5e1; margin: 0 0 10px; line-height: 1.4;
+                }
+                .portfolio-badges { display: flex; gap: 5px; flex-wrap: wrap; margin-bottom: 10px; }
+                .pbadge {
+                  font-size: 0.62rem; font-weight: 600; padding: 2px 8px; border-radius: 20px;
+                  border: 1px solid; backdrop-filter: blur(2px);
+                }
+                .pbadge-blue  { color: #38bdf8; border-color: #38bdf8; background: rgba(56,189,248,0.12); }
+                .pbadge-green { color: #34d399; border-color: #34d399; background: rgba(52,211,153,0.12); }
+                .pbadge-amber { color: #fbbf24; border-color: #fbbf24; background: rgba(251,191,36,0.12); }
+                .pbadge-purple{ color: #a78bfa; border-color: #a78bfa; background: rgba(167,139,250,0.12); }
+                .portfolio-actions { display: flex; gap: 8px; }
+                .portfolio-actions a {
+                  width: 34px; height: 34px; border-radius: 50%;
+                  background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25);
+                  display: flex; align-items: center; justify-content: center;
+                  color: #fff; font-size: 0.85rem; transition: all 0.2s; text-decoration: none;
+                }
+                .portfolio-actions a:hover { background: rgba(255,255,255,0.28); color: #fff; }
+              </style>
+
+              <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                <!-- Project 1: PJU Panel Surya 2023 – Curah Manis -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-energi">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-1.jpg" alt="PJU Panel Surya Desa Curah Manis 2023" loading="lazy">
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-cat energi">Energi Terbarukan</div>
+                      <h4 class="portfolio-title">PJU Panel Surya – Desa Curah Manis</h4>
+                      <div class="portfolio-date">Mei – Jun 2023</div>
+                      <div class="portfolio-desc">Instalasi Penerangan Jalan Umum berbasis panel surya di Desa Curah Manis, Jember sebagai program pengabdian masyarakat.</div>
+                      <div class="portfolio-badges">
+                        <span class="pbadge pbadge-green">Panel Surya</span>
+                        <span class="pbadge pbadge-green">Instalasi Listrik</span>
+                        <span class="pbadge pbadge-green">PJU</span>
+                      </div>
+                      <div class="portfolio-actions">
+                        <a href="assets/img/portfolio/portfolio-1.jpg" class="glightbox" title="PJU Panel Surya Curah Manis 2023"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="Detail Proyek"><i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <!-- Project 2: PJU Panel Surya 2024 – Jenggawah -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-energi">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-2.jpg" alt="PJU Panel Surya Desa Curah Manis 2024" loading="lazy">
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-cat energi">Energi Terbarukan</div>
+                      <h4 class="portfolio-title">PJU Panel Surya – Desa Curah Manis</h4>
+                      <div class="portfolio-date">Mei – Jun 2024</div>
+                      <div class="portfolio-desc">Lanjutan program PJU panel surya di Desa Curah Manis, Jember — perluasan titik instalasi dan peningkatan kapasitas sistem.</div>
+                      <div class="portfolio-badges">
+                        <span class="pbadge pbadge-green">Panel Surya</span>
+                        <span class="pbadge pbadge-green">Energi Terbarukan</span>
+                        <span class="pbadge pbadge-green">PJU</span>
+                      </div>
+                      <div class="portfolio-actions">
+                        <a href="assets/img/portfolio/portfolio-2.jpg" class="glightbox" title="PJU Panel Surya Curah Manis 2024"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="Detail Proyek"><i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <!-- Project 3: Autofocus Mikroskop PPO -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-ai">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-3.jpg" alt="Autofokus Mikroskop PPO" loading="lazy">
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-cat ai">AI & Robotika</div>
+                      <h4 class="portfolio-title">Autofokus Mikroskop – Reinforcement Learning PPO</h4>
+                      <div class="portfolio-date">Apr 2025 – Agu 2025</div>
+                      <div class="portfolio-desc">Sistem autofokus mikroskop berbasis PPO Agent dengan Operator Laplacian sebagai reward function. Diimplementasikan pada hardware fisik dengan Raspberry Pi 5.</div>
+                      <div class="portfolio-badges">
+                        <span class="pbadge pbadge-blue">57% Success Rate</span>
+                        <span class="pbadge pbadge-purple">100 Episode</span>
+                        <span class="pbadge pbadge-blue">Raspberry Pi 5</span>
+                        <span class="pbadge pbadge-blue">NEMA 23</span>
+                      </div>
+                      <div class="portfolio-actions">
+                        <a href="assets/img/portfolio/portfolio-3.jpg" class="glightbox" title="Autofokus Mikroskop PPO"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="Detail Proyek"><i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <!-- Project 4: Sistem Pemotong Kayu PLC -->
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-plc">
+                  <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-4.jpg" alt="Sistem Pemotong Kayu PLC Omron" loading="lazy">
+                    <div class="portfolio-overlay">
+                      <div class="portfolio-cat plc">Otomasi PLC</div>
+                      <h4 class="portfolio-title">Sistem Pemotong Kayu Otomatis – PLC Omron CP1E</h4>
+                      <div class="portfolio-date">Proyek Sistem Kendali</div>
+                      <div class="portfolio-desc">Otomatisasi industri pemotongan kayu berbasis PLC Omron CP1E dengan 3 sensor proximity, konveyor, gergaji, dan pneumatik. Dilengkapi desain HMI.</div>
+                      <div class="portfolio-badges">
+                        <span class="pbadge pbadge-amber">PLC Omron CP1E</span>
+                        <span class="pbadge pbadge-amber">Ladder Diagram</span>
+                        <span class="pbadge pbadge-green">HMI</span>
+                        <span class="pbadge pbadge-green">KEEP Relay</span>
+                      </div>
+                      <div class="portfolio-actions">
+                        <a href="assets/img/portfolio/portfolio-4.jpg" class="glightbox" title="Sistem Pemotong Kayu PLC"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html" title="Detail Proyek"><i class="bi bi-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Portfolio Section -->
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Jangan ragu untuk menghubungi saya untuk diskusi, kolaborasi, atau peluang kerja</p>
+      </div>
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box">
+              <h3>Contact Info</h3>
+              <p>Saya terbuka untuk peluang kerja, kolaborasi proyek, maupun diskusi teknis seputar teknik elektro.</p>
+              <div class="info-item">
+                <div class="icon-box"><i class="bi bi-geo-alt"></i></div>
+                <div class="content">
+                  <h4>Lokasi</h4>
+                  <p>Kota Madiun, Jawa Timur, Indonesia</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="icon-box"><i class="bi bi-telephone"></i></div>
+                <div class="content">
+                  <h4>Nomor Telepon</h4>
+                  <p>+6287725160973</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="icon-box"><i class="bi bi-envelope"></i></div>
+                <div class="content">
+                  <h4>Email Address</h4>
+                  <p>taufiqharmansyah014@gmail.com</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="icon-box"><i class="bi bi-linkedin"></i></div>
+                <div class="content">
+                  <h4>LinkedIn</h4>
+                  <p>linkedin.com/in/mtaufiqh14/</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="contact-form">
+              <h3>Get In Touch</h3>
+              <p>Kirimkan pesan Anda dan saya akan segera merespons.</p>
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  </div>
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  </div>
+                  <div class="col-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">SnapFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script>
+    // Custom decimal counter for IPK
+    function animateIPK() {
+      var el = document.getElementById('ipk-counter');
+      if (!el) return;
+      var start = 0;
+      var end = 3.49;
+      var duration = 1500;
+      var startTime = null;
+      function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        var progress = Math.min((timestamp - startTime) / duration, 1);
+        var val = (progress * end).toFixed(2);
+        el.textContent = val;
+        if (progress < 1) requestAnimationFrame(step);
+        else el.textContent = '3.49';
+      }
+      requestAnimationFrame(step);
+    }
+    // Trigger when stats section is visible
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          animateIPK();
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+    var statsEl = document.querySelector('#stats');
+    if (statsEl) observer.observe(statsEl);
+  </script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
