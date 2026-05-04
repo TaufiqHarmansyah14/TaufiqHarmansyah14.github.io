@@ -2548,3 +2548,18 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* Fix hero profile image */
+.hero .hero-visual .profile-container .profile-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 30px;
+  position: relative;
+  z-index: 2;
+}
+.hero .hero-visual .profile-container .profile-background {
+  display: none;
+}
