@@ -110,28 +110,26 @@
       word-break: break-word !important;
     }
     /* ── Stats + Details side-by-side (About section) ── */
-    .about-secondary-row .stats-grid-vertical {
+    .about .col-lg-5 .stats-grid-vertical {
       display: flex !important;
-      flex-direction: column !important;
-      gap: 18px !important;
-      height: 100%;
-      justify-content: space-between;
+      flex-direction: row !important;
+      justify-content: space-between !important;
+      gap: 12px !important;
       background: rgba(255,255,255,0.03);
       border: 1px solid rgba(255,255,255,0.08);
       border-radius: 12px;
       padding: 22px 20px;
     }
-    .about-secondary-row .stats-grid-vertical .stat-item {
-      text-align: left;
+    .about .col-lg-5 .stats-grid-vertical .stat-item {
+      text-align: center;
+      flex: 1;
     }
-    @media (max-width: 767px) {
-      .about-secondary-row .stats-grid-vertical {
-        flex-direction: row !important;
-        justify-content: space-between !important;
-        text-align: center;
+    @media (max-width: 575px) {
+      .about .col-lg-5 .stats-grid-vertical {
+        flex-direction: column !important;
       }
-      .about-secondary-row .stats-grid-vertical .stat-item {
-        text-align: center;
+      .about .col-lg-5 .stats-grid-vertical .stat-item {
+        text-align: left;
       }
     }
   </style>
@@ -233,6 +231,20 @@
                 </div>
               </div>
             </div>
+            <div class="stats-grid stats-grid-vertical mt-4">
+              <div class="stat-item">
+                <div class="stat-number">3.49</div>
+                <div class="stat-label">IPK / 4.00</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Masa Studi</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">1</div>
+                <div class="stat-label">Pengalaman Industri</div>
+              </div>
+            </div>
           </div>
           <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
             <div class="about-content">
@@ -244,57 +256,37 @@
                 <p>Sarjana Teknik Elektro Universitas Jember (IPK 3,49/4,00) dengan pengalaman praktis di industri perkeretaapian nasional melalui program kerja praktik di PT. Industri Kereta Api (INKA) Persero, serta pengalaman kerja di bidang electrical maintenance pada PT. Terminal Nilam Utara.</p>
                 <p>Memiliki keahlian teknis di bidang desain pengukuran listrik, sistem kendali otomatis, wiring diagram, desain CAD, serta penerapan algoritma Reinforcement Learning pada sistem kontrol fisik berbasis Raspberry Pi.</p>
               </div>
-              <div class="row gy-4 about-secondary-row align-items-start">
-                <div class="col-lg-4 col-md-5">
-                  <div class="stats-grid stats-grid-vertical">
-                    <div class="stat-item">
-                      <div class="stat-number">3.49</div>
-                      <div class="stat-label">IPK / 4.00</div>
-                    </div>
-                    <div class="stat-item">
-                      <div class="stat-number">4</div>
-                      <div class="stat-label">Masa Studi</div>
-                    </div>
-                    <div class="stat-item">
-                      <div class="stat-number">1</div>
-                      <div class="stat-label">Pengalaman Industri</div>
-                    </div>
+              <div class="details-grid">
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Spesialisasi</span>
+                    <span class="detail-value">Teknik Elektro & Sistem Kendali</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Level</span>
+                    <span class="detail-value">Fresh Graduate</span>
                   </div>
                 </div>
-                <div class="col-lg-8 col-md-7">
-                  <div class="details-grid">
-                    <div class="detail-row">
-                      <div class="detail-item">
-                        <span class="detail-label">Spesialisasi</span>
-                        <span class="detail-value">Teknik Elektro & Sistem Kendali</span>
-                      </div>
-                      <div class="detail-item">
-                        <span class="detail-label">Level</span>
-                        <span class="detail-value">Fresh Graduate</span>
-                      </div>
-                    </div>
-                    <div class="detail-row">
-                      <div class="detail-item">
-                        <span class="detail-label">Pendidikan</span>
-                        <span class="detail-value">Teknik Elektro, Universitas Jember</span>
-                      </div>
-                      <div class="detail-item">
-                        <span class="detail-label">Bahasa</span>
-                        <span class="detail-value">Indonesia, English</span>
-                      </div>
-                    </div>
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Pendidikan</span>
+                    <span class="detail-value">Teknik Elektro, Universitas Jember</span>
                   </div>
-                  <div class="cta-section">
-                    <a href="#resume" class="btn btn-primary">
-                      <i class="bi bi-file-earmark-text"></i>
-                      Lihat Resume
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                      <i class="bi bi-chat-dots"></i>
-                      Let's Talk
-                    </a>
+                  <div class="detail-item">
+                    <span class="detail-label">Bahasa</span>
+                    <span class="detail-value">Indonesia, English</span>
                   </div>
                 </div>
+              </div>
+              <div class="cta-section">
+                <a href="#resume" class="btn btn-primary">
+                  <i class="bi bi-file-earmark-text"></i>
+                  Lihat Resume
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                  <i class="bi bi-chat-dots"></i>
+                  Let's Talk
+                </a>
               </div>
             </div>
           </div>
